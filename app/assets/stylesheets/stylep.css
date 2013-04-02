@@ -1,0 +1,168 @@
+ 	html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	position: absolute;
+}
+body {
+	line-height: 1;
+}
+
+
+body{
+background-image:url(fondo.png) ;
+background-size: 100% auto;
+
+}
+
+div#uno{
+	padding-top: 4px;
+	font-size: 70px;
+    color: white;
+    margin-left: 60px;
+}
+
+
+header{
+	width: 90%;
+	height: 100px;
+	background-image: url(fondo.png);
+	margin:5% 5%;
+}
+
+a {
+  color: white;
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+header#pablo{
+	width: 4.5%;
+	height: 100px;
+	background: black;
+	margin-left: 3px;
+	margin-top: 40.5px;
+}
+
+header#juan{
+	width: 4.5%;
+	height: 100px;
+	background: black;
+	margin: 95.3% 95.3%;
+	margin-top: 40.5px;
+}
+
+header#main{
+	width: 50%;
+	height: 50px;
+	background-image: url(fondo1.png);
+	margin: 45% 45%;
+	margin-top: 150px;
+}
+
+table#butto{
+	height: auto;
+	padding-top: 15px;
+	margin-left: 130px;
+position: absolute;
+}
+
+section#cuerpo{
+	width: 80%;
+	height: 800px;
+	background: #2A0A22;
+	margin:1% ;
+	top: 160px;
+	
+}
+
+section#sidebar{
+	width: 17.5%;
+	height: 600px;
+	background-image: url(fondo1.png);
+	margin: 1%;
+	margin-top: 60px;
+	top: 160px;
+	right: 81.3%;
+}
+
+div#modu{
+	margin-left: 130px;
+	
+}
+
+button{
+	background-image: url(fondo1.png);
+	color: white;
+	}
+
+
+div#b{
+	color: white;
+	margin-left: 550px;
+	font-size: 50px;
+}
+
+div#tex{
+	margin-right: 30px;
+	color: white;
+	margin-left: 490px;
+	font-size: 20px;
+}
+
+
+
+footer{
+	width: 70%;
+	height: 30px;
+	background-image: url(fondo.png);
+	margin:25px 25%;
+	top:810px;
+}
+
+footer p{
+	color: white;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.box{
+	-webhit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+
+	-webkit-box-shadow:2px 2px 20px #eee;
+	-moz-box-shadow:2px 2px 20px #eee;
+	-o-box-shadow:2px 2px 20px #eee;
+	box-shadow:2px 2px 20px #eee;
+	
+}

@@ -1,0 +1,76 @@
+<div id="nuevo">
+
+<p id="notice"><%= notice %></p>
+<br>
+
+<h1>Solicitud de: <%= @datos_contacto.nombre %></h1>
+
+<p>
+  <b>Cliente:</b>
+  <%= @solicitud.cliente %>
+</p>
+<br>
+<p>
+  <b>Fecha de solicitud:</b>
+  <%= @solicitud.fecha_solicitud %>
+</p>
+<br>
+<p>
+  <b>Resolucion:</b>
+  <%= @solicitud.resolucion %>
+</p>
+<br>
+<p>
+  <b>Producto:</b>
+  <%= @solicitud.producto %>
+</p>
+<br>
+<p>
+  <b>Cantidad:</b>
+  <%= @solicitud.cantidad %>
+</p>
+<br>
+<p>
+  <b>Fecha de aprobacion:</b>
+  <%= @solicitud.fecha_aprobacion %>
+</p>
+<br>
+<p>
+  <b>Instructor:</b>
+  <%= @solicitud.instructor %>
+</p>
+<br>
+<p>
+  <b>Producto:</b>
+  <%= @solicitud.producto %>
+</p>
+<br>
+<p>
+  <b>Dias faltantes:</b>
+  <%= @solicitud.dias_faltantes %>
+</p>
+<br>
+<p>
+  <b>Unidades entregadas:</b>
+  <%= @solicitud.unidades_entregadas %>
+</p>
+<br>
+<p>
+  <b>Saldo:</b>
+  <%= @solicitud.saldo %>
+</p>
+<br>
+<p>
+  <b>Fecha de entrega al cliente:</b>
+  <%= @solicitud.fecha_entrega_cliente %>
+</p>
+<br>
+<p>
+  <b>Total:</b>
+  <%= @solicitud.total %>
+</p>
+
+
+<button class="box"><%= link_to 'Editar', edit_solicitud_path(@solicitud) %></button>
+<button class="box"><%= link_to 'Atras', solicituds_path %></button>
+</div>

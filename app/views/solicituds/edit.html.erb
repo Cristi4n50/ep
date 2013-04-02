@@ -1,0 +1,11 @@
+<div id="nuevo">
+<h1>Editar solicitud de <%= @datos_contacto.nombre %>:</h1>
+
+<%= render 'form' %>
+
+<button class="box"><%= link_to 'Mostrar', solicitud_path %></button>
+<button class="box"><%= link_to 'Atras', datos_contacto_solicituds_path %></button>
+</div>
+
+<%= link_to 'Mostrar', sucursal_path %> | 
+<%= link_to 'Atras', empresa_sucursales_path %>

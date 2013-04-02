@@ -1,0 +1,41 @@
+<%= form_for(@datos_contacto) do |f| %>
+  <% if @datos_contacto.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se puede guardar <%= pluralize(@datos_contacto.errors.count, "error") %> encontrados:</h2>
+
+      <ul>
+      <% @datos_contacto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :movil %><br />
+    <%= f.text_field :movil %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

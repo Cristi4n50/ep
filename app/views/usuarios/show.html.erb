@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Primer Nombre:</b>
+  <%= @usuario.nombre1 %>
+</p>
+
+<p>
+  <b>Segundo Nombre:</b>
+  <%= @usuario.nombre2 %>
+</p>
+
+<p>
+  <b>Primer Apellido:</b>
+  <%= @usuario.apellido1 %>
+</p>
+
+<p>
+  <b>Segundo Apellido:</b>
+  <%= @usuario.apellido2 %>
+</p>
+
+<p>
+  <b>Numero de cedula:</b>
+  <%= @usuario.num_cedula %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @usuario.usuario %>
+</p>
+
+<p>
+  <b>Clave:</b>
+  <%= @usuario.clave %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @usuario.email %>
+</p>
+
+<p>
+  <b>Fecha de nacimiento:</b>
+  <%= @usuario.fecha_nac %>
+</p>
+
+
+<%= link_to 'Editar', edit_usuario_path(@usuario) %> |
+<%= link_to 'Atras', usuarios_path %>

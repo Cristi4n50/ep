@@ -1,0 +1,15 @@
+<center><p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fecha de envio:</b>
+  <%= @bordado.fecha_envio %>
+</p>
+
+<p>
+  <b>Fecha de llegada:</b>
+  <%= @bordado.fecha_llegada %>
+</p>
+
+
+<%= link_to 'Editar', edit_bordado_path(@bordado) %> |
+<%= link_to 'Atras', bordados_path %></center>

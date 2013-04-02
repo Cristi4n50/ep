@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Color:</b>
+  <%= @diseno.color %>
+</p>
+
+<p>
+  <b>Talla:</b>
+  <%= @diseno.talla %>
+</p>
+
+<p>
+  <b>Corte:</b>
+  <%= @diseno.corte %>
+</p>
+
+
+<%= link_to 'Editar', edit_diseno_path(@diseno) %> |
+<%= link_to 'Atras', disenos_path %>

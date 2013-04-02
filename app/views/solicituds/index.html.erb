@@ -1,0 +1,56 @@
+<div id="izqe" class="box"></div>
+<div id="pabli" class="box"><div id="texto">Lista de Solicitudes<div id="img"><%= image_tag('logo.png')%></div></div></div>
+<div id="dere" class="box"></div>
+<div id="meni" class="box">
+<button class="box"><%= link_to 'Inicio', inicio_index_path%></button>
+<button class="box"><%= link_to 'Ayuda', ayuda_index_path %></button>
+<button class="box"><%= link_to 'Acerca', acerca_index_path %></button>
+<button class="box"><%= link_to 'Salir', principal_index_path %></button>
+
+</div>
+<center><div id="tab"><table id="ta" border="4" class="box">
+  <tr>
+    <th>Cliente</th>
+    <th>Fecha de solicitud</th>
+    <th>Resolucion</th>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Fecha de aprobacion</th>
+    <th>Instructor</th>
+    <th>Producto</th>
+    <th>Dias faltantes</th>
+    <th>Unidades entregadas</th>
+    <th>Saldo</th>
+    <th>Fecha de entrega al cliente</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @solicituds.each do |solicitud| %>
+  <tr>
+    <td><%= solicitud.cliente %></td>
+    <td><%= solicitud.fecha_solicitud %></td>
+    <td><%= solicitud.resolucion %></td>
+    <td><%= solicitud.producto %></td>
+    <td><%= solicitud.cantidad %></td>
+    <td><%= solicitud.fecha_aprobacion %></td>
+    <td><%= solicitud.instructor %></td>
+    <td><%= solicitud.producto %></td>
+    <td><%= solicitud.dias_faltantes %></td>
+    <td><%= solicitud.unidades_entregadas %></td>
+    <td><%= solicitud.saldo %></td>
+    <td><%= solicitud.fecha_entrega_cliente %></td>
+    <td><%= solicitud.total %></td>
+    <td><%= link_to 'Mostrar', datos_contacto_solicitud_path(@datos_contacto, solicitud) %></td>
+    <td><%= link_to 'Editar', edit_datos_contacto_solicitud_path(@datos_contacto, solicitud) %></td>
+    <td><%= link_to 'Eliminar', datos_contacto_solicitud_path(@datos_contacto,  solicitud), method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<center><button class="box"><%= link_to 'Nuevo', new_datos_contacto_solicitud_path %></button>
+<button class="box"><%= link_to 'Atras', datos_contactos_path %></button></center>

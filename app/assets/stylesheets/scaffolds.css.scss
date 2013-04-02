@@ -1,0 +1,314 @@
+body {
+  background-image: url(fondo.png);
+  background-size: 100% auto;
+  margin-left: 50px;
+  color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: white;
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+div#pablo{
+  width: 114.8%;
+  height: 100px;
+  background-image: url(fondo.png);
+  margin:-9% 5%;
+  font-size: 75px;
+  color: white; 
+}
+
+div#izq{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin-left: -1025px;
+  margin-top: 40.5px;
+}
+
+div#der{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin: -9.5% 120%;
+
+}
+
+div#menu{
+  width: 65%;
+  height: 50px;
+  background-image: url(fondo1.png);
+  margin: 50% 55%;
+  margin-top: 125px;
+}
+
+div#texto{
+  margin-left: 100px;
+}
+
+table{
+  position: relative;
+  background-image: url(fondo1.png);
+  text-align: center;
+  width: 100%;
+  border-collapse: separate;
+
+    tr:nth-child(odd) {
+    background-image:url(fondo1.png);
+    color:white;
+  }
+    tr:nth-child(even) {
+    background-image: url(fondo.png);
+    color:white;
+  }
+  
+    th {
+    background-color: gray;
+    font-size: 17px;
+    color: white;
+  }
+}
+
+
+div#tabla{
+  margin-left: 250px;
+  margin-top: -450px;
+  color: white;
+  font-size: 25px;
+}
+
+div#pabli{
+  width: 90%;
+  height: 100px;
+  background-image: url(fondo.png);
+  margin:-7.3% 5%;
+  font-size: 75px;
+  color: white; 
+  text-align: left;
+}
+
+div#izqe{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin-left: -1300px;
+  margin-top: 30px;
+}
+
+div#dere{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin: -7.5% 95.2%;
+
+}
+
+div#meni{
+  width: 55%;
+  height: 50px;
+  background-image: url(fondo1.png);
+  margin: 50% 40%;
+  margin-top: 125px;
+}
+
+table#ta{
+  position: relative;
+  background-image: url(fondo1.png);
+  text-align: center;
+  width: 98%;
+  border-collapse: separate;
+
+   tr:nth-child(odd) {
+    background-image:url(fondo1.png);
+    color:white;
+  }
+    tr:nth-child(even) {
+    background-image: url(fondo.png);
+    color:white;
+  }
+  
+    th {
+    background-color: gray;
+    font-size: 17px;
+    color: white;
+  }
+}
+
+div#tab{
+  margin-left: 10px;
+  margin-top: -600px;
+  color: white;
+  font-size: 20px;
+}
+
+div#nuevo{
+  margin: 5px 500px;
+  padding-top: 50px;
+  background-image: url(fondo1.pn);
+  font-size: 25px;
+}
+
+button{
+  width: 100px;
+  height: 35px;
+  background-image:url(fondo1.png); 
+  margin-top: 30px;
+  margin-left: 55px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/*#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: gray;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}*/
+
+.box{
+  -webhit-border-radius:10px;
+  -moz-border-radius:10px;
+  -o-border-radius:10px;
+  -khtml-border-radius:10px;
+  border-radius:10px;
+
+  -webkit-box-shadow:2px 2px 20px #eee;
+  -moz-box-shadow:2px 2px 20px #eee;
+  -o-box-shadow:2px 2px 20px #eee;
+  box-shadow:2px 2px 20px #eee;
+  
+}
+
+footer{
+  width: 100%;
+  height: 30px;
+  background-image: url(fondo.png);
+  margin:-5;
+}
+
+footer p{
+  color: white;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+div#img{
+  float: right;
+  padding-top: 65px;
+  margin-right: 5px;
+} 
+
+div#pablit{
+  width: 100%;
+  height: 100px;
+  background-image: url(fondo.png);
+  margin:-9% 11.5%;
+  font-size: 75px;
+  color: white; 
+  text-align: right;
+}
+
+div#izqer{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin-left: -940px;
+  margin-top: 30px;
+}
+
+div#derec{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin: 0.2% 112%;
+
+}
+
+div#meno{
+  width: 65%;
+  height: 50px;
+  background-image: url(fondo1.png);
+  margin: 50% 46.3%;
+  margin-top: 20px;
+}
+
+div#pablito{
+  width: 100%;
+  height: 100px;
+  background-image: url(fondo.png);
+  margin:-8.5% 8%;
+  font-size: 75px;
+  color: white; 
+  text-align: right;
+}
+
+div#izqere{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin-left: -1100.5px;
+  margin-top: 30px;
+}
+
+div#derech{
+  width: 4.5%;
+  height: 100px;
+  background: black;
+  margin: 0.2% 109%;
+
+}

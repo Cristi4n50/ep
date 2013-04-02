@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fecha de envio:</b>
+  <%= @estampado.fecha_envio %>
+</p>
+
+<p>
+  <b>Fecha de llegada:</b>
+  <%= @estampado.fecha_llegada %>
+</p>
+
+
+<%= link_to 'Editar', edit_estampado_path(@estampado) %> |
+<%= link_to 'Atras', estampados_path %>

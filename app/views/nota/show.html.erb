@@ -1,0 +1,26 @@
+<div id="nuevo">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Items:</b>
+  <%= @notum.items %>
+</p>
+<br>
+<p>
+  <b>Unidad:</b>
+  <%= @notum.unidad %>
+</p>
+<br>
+<p>
+  <b>Tipo:</b>
+  <%= @notum.tipo %>
+</p>
+<br>
+<p>
+  <b>Num documento recibe:</b>
+  <%= @notum.num_documento_recibe %>
+</p>
+
+<button class="box"><%= link_to 'Editar', edit_notum_path(@notum) %></button>
+<button class="box"><%= link_to 'Atras', nota_path %></center></button>
+</div>

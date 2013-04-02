@@ -1,0 +1,36 @@
+<div id="izqere" class="box"></div>
+<div id="pablito" class="box"><div id="texto">Lista de Registro de Ordenes<div id="img"><%= image_tag('logo.png')%></div></div></div>
+<div id="derech" class="box"></div>
+<div id="meno" class="box">
+<button class="box"><%= link_to 'Inicio', inicio_index_path%></button>
+<button class="box"><%= link_to 'Ayuda', ayuda_index_path %></button>
+<button class="box"><%= link_to 'Acerca', acerca_index_path %></button>
+<button class="box"><%= link_to 'Salir', principal_index_path %></button>
+
+</div>
+<center><div id="tabla"><table  border="4" class="box">
+  <tr>
+    <th>Descripcion del producto</th>
+    <th>Valor unidad</th>
+    <th>Valor total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registro_compras.each do |registro_compra| %>
+  <tr>
+    <td><%= registro_compra.descripcion_producto %></td>
+    <td><%= registro_compra.valor_unidad %></td>
+    <td><%= registro_compra.valor_total %></td>
+    <td><%= link_to 'Mostrar', registro_compra %></td>
+    <td><%= link_to 'Editar', edit_registro_compra_path(registro_compra) %></td>
+    <td><%= link_to 'Eliminar', registro_compra, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<center><button class="box"><%= link_to 'Nuevo', new_registro_compra_path %></button>
+<button class="box"><%= link_to 'Atras', inicio_index_path %></button></center>

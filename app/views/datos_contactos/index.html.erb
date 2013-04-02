@@ -1,0 +1,35 @@
+<h1>Lista de Datos de Contacto</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>Movil</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @datos_contactos.each do |datos_contacto| %>
+  <tr>
+    <td><%= datos_contacto.nombre %></td>
+    <td><%= datos_contacto.apellido %></td>
+    <td><%= datos_contacto.telefono %></td>
+    <td><%= datos_contacto.direccion %></td>
+    <td><%= datos_contacto.movil %></td>
+    <td><%= datos_contacto.email %></td>
+    <td><%= link_to 'Mostrar', datos_contacto %></td>
+    <td><%= link_to 'Editar', edit_datos_contacto_path(datos_contacto) %></td>
+    <td><%= link_to 'Eliminar', datos_contacto, method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+    <td><%= link_to 'Solicitudes', datos_contacto_solicituds_path(datos_contacto) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo', new_datos_contacto_path %>

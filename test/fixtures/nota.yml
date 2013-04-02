@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  items: 1
+  unidad: 1
+  tipo: 
+  num_documento_recibe: MyString
+
+two:
+  items: 1
+  unidad: 1
+  tipo: 
+  num_documento_recibe: MyString

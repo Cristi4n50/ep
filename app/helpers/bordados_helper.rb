@@ -1,0 +1,2 @@
+module BordadosHelper
+end

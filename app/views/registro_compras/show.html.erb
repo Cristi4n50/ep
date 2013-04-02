@@ -1,0 +1,22 @@
+<div id="nuevo">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descripcion del producto:</b>
+  <%= @registro_compra.descripcion_producto %>
+</p>
+<br>
+<p>
+  <b>Valor unidad:</b>
+  <%= @registro_compra.valor_unidad %>
+</p>
+<br>
+<p>
+  <b>Valor total:</b>
+  <%= @registro_compra.valor_total %>
+</p>
+
+
+<button class="box"><%= link_to 'Editar', edit_registro_compra_path(@registro_compra) %></button>
+<button class="box"><%= link_to 'Atras', registro_compras_path %></button>
+</div>

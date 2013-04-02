@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fecha de envio:</b>
+  <%= @produccion.fecha_envio %>
+</p>
+
+<p>
+  <b>Fecha de llegada:</b>
+  <%= @produccion.fecha_llegada %>
+</p>
+
+
+<%= link_to 'Editar', edit_produccion_path(@produccion) %> |
+<%= link_to 'Atras', produccions_path %>

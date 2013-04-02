@@ -1,0 +1,25 @@
+<%= form_for(@bordado) do |f| %>
+  <% if @bordado.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se ha podido guardar: <%= pluralize(@bordado.errors.count, "error") %> encontrados</h2>
+
+      <ul>
+      <% @bordado.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fecha_envio %><br />
+    <%= f.date_select :fecha_envio %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_llegada %><br />
+    <%= f.date_select :fecha_llegada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

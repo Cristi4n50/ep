@@ -1,0 +1,27 @@
+<h1>Lista de Fechas de Diseños</h1>
+
+<table>
+  <tr>
+    <th>Color</th>
+    <th>Talla</th>
+    <th>Corte</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @disenos.each do |diseno| %>
+  <tr>
+    <td><%= diseno.color %></td>
+    <td><%= diseno.talla %></td>
+    <td><%= diseno.corte %></td>
+    <td><%= link_to 'Mostrar', diseno %></td>
+    <td><%= link_to 'Editar', edit_diseno_path(diseno) %></td>
+    <td><%= link_to 'Aliminar', diseno, method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo', new_diseno_path %>

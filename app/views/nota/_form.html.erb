@@ -1,0 +1,33 @@
+<%= form_for(@notum) do |f| %>
+  <% if @notum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notum.errors.count, "error") %> prohibited this notum from being saved:</h2>
+
+      <ul>
+      <% @notum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :items %><br />
+    <%= f.number_field :items %>
+  </div>
+  <div class="field">
+    <%= f.label :unidad %><br />
+    <%= f.number_field :unidad %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :num_documento_recibe %><br />
+    <%= f.text_field :num_documento_recibe %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

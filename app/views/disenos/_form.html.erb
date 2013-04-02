@@ -1,0 +1,29 @@
+<%= form_for(@diseno) do |f| %>
+  <% if @diseno.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se puede Guardar <%= pluralize(@diseno.errors.count, "error") %> encontrados:</h2>
+
+      <ul>
+      <% @diseno.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :talla %><br />
+    <%= f.text_field :talla %>
+  </div>
+  <div class="field">
+    <%= f.label :corte %><br />
+    <%= f.text_field :corte %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

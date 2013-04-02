@@ -1,0 +1,29 @@
+<%= form_for(@registro_compra) do |f| %>
+  <% if @registro_compra.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se puede Guardar <%= pluralize(@registro_compra.errors.count, "error") %> encontrados:</h2>
+
+      <ul>
+      <% @registro_compra.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion_producto %><br />
+    <%= f.text_field :descripcion_producto %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_unidad %><br />
+    <%= f.number_field :valor_unidad %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_total %><br />
+    <%= f.number_field :valor_total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

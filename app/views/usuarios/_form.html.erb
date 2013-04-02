@@ -1,0 +1,53 @@
+<%= form_for(@usuario) do |f| %>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2>No se puede Guardar <%= pluralize(@usuario.errors.count, "error") %> encontrados:</h2>
+
+      <ul>
+      <% @usuario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre1 %><br />
+    <%= f.text_field :nombre1 %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre2 %><br />
+    <%= f.text_field :nombre2 %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido1 %><br />
+    <%= f.text_field :apellido1 %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido2 %><br />
+    <%= f.text_field :apellido2 %>
+  </div>
+  <div class="field">
+    <%= f.label :num_cedula %><br />
+    <%= f.text_field :num_cedula %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario %><br />
+    <%= f.text_field :usuario %>
+  </div>
+  <div class="field">
+    <%= f.label :clave %><br />
+    <%= f.text_field :clave %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nac %><br />
+    <%= f.date_select :fecha_nac %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+ <div id="izq" class="box"></div>
+<div id="pablo" class="box"><div id="texto">Lista de Notas Registradas <%= image_tag('logo.png')%></div></div>
+<div id="der" class="box"></div>
+<div id="menu" class="box">
+<button class="box"><%= link_to 'Inicio', inicio_index_path%></button>
+<button class="box"><%= link_to 'Ayuda', ayuda_index_path %></button>
+<button class="box"><%= link_to 'Acerca', acerca_index_path %></button>
+<button class="box"><%= link_to 'Salir', principal_index_path %></button>
+
+</div>
+<center><div id="tabla"><table class="box" border="3">
+  <tr>
+    <th>Items</th>
+    <th>Unidad</th>
+    <th>Tipo</th>
+    <th>Num documento recibe</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nota.each do |notum| %>
+  <tr>
+    <td><%= notum.items %></td>
+    <td><%= notum.unidad %></td>
+    <td><%= notum.tipo %></td>
+    <td><%= notum.num_documento_recibe %></td>
+    <td><%= link_to 'Mostrar', notum %></td>
+    <td><%= link_to 'Editar', edit_notum_path(notum) %></td>
+    <td><%= link_to 'Eliminar', notum, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</center>
+<br />
+
+<center><button class="box"><%= link_to 'Nueva', new_notum_path %></button>
+<button class="box"><%= link_to 'Atras', inicio_index_path %></button></center>

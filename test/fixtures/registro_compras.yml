@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descripcion_producto: MyString
+  valor_unidad: 1
+  valor_total: 1
+
+two:
+  descripcion_producto: MyString
+  valor_unidad: 1
+  valor_total: 1

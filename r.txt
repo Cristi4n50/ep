@@ -1,0 +1,76 @@
+        acerca_index GET    /acerca/index(.:format)              acerca#index
+         ayuda_index GET    /ayuda/index(.:format)               ayuda#index
+     principal_index GET    /principal/index(.:format)           principal#index
+       iniciar_index GET    /iniciar/index(.:format)             iniciar#index
+                nota GET    /nota(.:format)                      nota#index
+                     POST   /nota(.:format)                      nota#create
+           new_notum GET    /nota/new(.:format)                  nota#new
+          edit_notum GET    /nota/:id/edit(.:format)             nota#edit
+               notum GET    /nota/:id(.:format)                  nota#show
+                     PUT    /nota/:id(.:format)                  nota#update
+                     DELETE /nota/:id(.:format)                  nota#destroy
+        inicio_index GET    /inicio/index(.:format)              inicio#index
+     datos_contactos GET    /datos_contactos(.:format)           datos_contactos#index
+                     POST   /datos_contactos(.:format)           datos_contactos#create
+  new_datos_contacto GET    /datos_contactos/new(.:format)       datos_contactos#new
+ edit_datos_contacto GET    /datos_contactos/:id/edit(.:format)  datos_contactos#edit
+      datos_contacto GET    /datos_contactos/:id(.:format)       datos_contactos#show
+                     PUT    /datos_contactos/:id(.:format)       datos_contactos#update
+                     DELETE /datos_contactos/:id(.:format)       datos_contactos#destroy
+            usuarios GET    /usuarios(.:format)                  usuarios#index
+                     POST   /usuarios(.:format)                  usuarios#create
+         new_usuario GET    /usuarios/new(.:format)              usuarios#new
+        edit_usuario GET    /usuarios/:id/edit(.:format)         usuarios#edit
+             usuario GET    /usuarios/:id(.:format)              usuarios#show
+                     PUT    /usuarios/:id(.:format)              usuarios#update
+                     DELETE /usuarios/:id(.:format)              usuarios#destroy
+    registro_compras GET    /registro_compras(.:format)          registro_compras#index
+                     POST   /registro_compras(.:format)          registro_compras#create
+ new_registro_compra GET    /registro_compras/new(.:format)      registro_compras#new
+edit_registro_compra GET    /registro_compras/:id/edit(.:format) registro_compras#edit
+     registro_compra GET    /registro_compras/:id(.:format)      registro_compras#show
+                     PUT    /registro_compras/:id(.:format)      registro_compras#update
+                     DELETE /registro_compras/:id(.:format)      registro_compras#destroy
+          solicituds GET    /solicituds(.:format)                solicituds#index
+                     POST   /solicituds(.:format)                solicituds#create
+       new_solicitud GET    /solicituds/new(.:format)            solicituds#new
+      edit_solicitud GET    /solicituds/:id/edit(.:format)       solicituds#edit
+           solicitud GET    /solicituds/:id(.:format)            solicituds#show
+                     PUT    /solicituds/:id(.:format)            solicituds#update
+                     DELETE /solicituds/:id(.:format)            solicituds#destroy
+             disenos GET    /disenos(.:format)                   disenos#index
+                     POST   /disenos(.:format)                   disenos#create
+          new_diseno GET    /disenos/new(.:format)               disenos#new
+         edit_diseno GET    /disenos/:id/edit(.:format)          disenos#edit
+              diseno GET    /disenos/:id(.:format)               disenos#show
+                     PUT    /disenos/:id(.:format)               disenos#update
+                     DELETE /disenos/:id(.:format)               disenos#destroy
+         produccions GET    /produccions(.:format)               produccions#index
+                     POST   /produccions(.:format)               produccions#create
+      new_produccion GET    /produccions/new(.:format)           produccions#new
+     edit_produccion GET    /produccions/:id/edit(.:format)      produccions#edit
+          produccion GET    /produccions/:id(.:format)           produccions#show
+                     PUT    /produccions/:id(.:format)           produccions#update
+                     DELETE /produccions/:id(.:format)           produccions#destroy
+          estampados GET    /estampados(.:format)                estampados#index
+                     POST   /estampados(.:format)                estampados#create
+       new_estampado GET    /estampados/new(.:format)            estampados#new
+      edit_estampado GET    /estampados/:id/edit(.:format)       estampados#edit
+           estampado GET    /estampados/:id(.:format)            estampados#show
+                     PUT    /estampados/:id(.:format)            estampados#update
+                     DELETE /estampados/:id(.:format)            estampados#destroy
+            bordados GET    /bordados(.:format)                  bordados#index
+                     POST   /bordados(.:format)                  bordados#create
+         new_bordado GET    /bordados/new(.:format)              bordados#new
+        edit_bordado GET    /bordados/:id/edit(.:format)         bordados#edit
+             bordado GET    /bordados/:id(.:format)              bordados#show
+                     PUT    /bordados/:id(.:format)              bordados#update
+                     DELETE /bordados/:id(.:format)              bordados#destroy
+               tipos GET    /tipos(.:format)                     tipos#index
+                     POST   /tipos(.:format)                     tipos#create
+            new_tipo GET    /tipos/new(.:format)                 tipos#new
+           edit_tipo GET    /tipos/:id/edit(.:format)            tipos#edit
+                tipo GET    /tipos/:id(.:format)                 tipos#show
+                     PUT    /tipos/:id(.:format)                 tipos#update
+                     DELETE /tipos/:id(.:format)                 tipos#destroy
+                root        /                                    principal#index
